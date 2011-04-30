@@ -1,6 +1,8 @@
 Ideas
 ====================
 
+TODO: Reorganize for github
+
 :Date: Wed, 12 Sep 2007 12:01:28 -0400
 
 Why must "subject" be a required header? Email is a conversation that might branch into many various subjects.
