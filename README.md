@@ -1,6 +1,6 @@
 # Messaging
 
-There are several annoyances with the state of electronic communication today. The more I think about how to implement solutions, the more it seems like one must replace the whole Internet to fix them. Of course this is a fool's errand, and yet surely things must be able to be incrementally improved. This repository will collect all my half-baked ideas, and stabs at implementations, within this problem space.
+There are several annoyances with the state of electronic communication today. The more I think about how to implement solutions, the more it seems like one must replace the whole Internet to fix them. Of course this is a fool's errand, but surely things must be able to be incrementally improved. This repository will collect all my half-baked ideas, and stabs at implementations, within this problem space.
 
 ## Problems
 
@@ -38,31 +38,31 @@ Innumerable other communication systems have appeared since 1982, when the SMTP 
 
 ## Other work
 
-The most frightening example of a project with similar user-interface aims is [Project Xanadu][]. Xanadu, like this project, criticizes the hypertext status quo:
+[Project Xanadu][], like this project, criticizes the hypertext status quo:
 
 > The World Wide Web trivializes our original hypertext model with one-way ever-breaking links and no management of version or contents.
 
-However, Xanadu has been churning since the 1960s with little results. I have to hope that with modern technology like git and Python, and a slightly different set of goals, I won't wake up one day an old man who relived [The Curse of Xanadu][].
+However, Xanadu has been churning since the 1960s with little results, something Wired magazine calls the [The Curse of Xanadu][]. With modern technology like Git and Python, and a slightly different set of goals (e.g. I don't care about a "3-D" interface), hopefully this project won't suffer the same fate.
 
-Before I learned of Xanadu, most of these ideas were spawned investigating DJB's proposal for [Internet Mail 2000][]. There have been many attempts to build an Internet Mail 2000 implementation:
+Most of the protocol ideas were spawned investigating DJB's proposal for [Internet Mail 2000][]. There have been many attempts to build an Internet Mail 2000 implementation:
 
 - [Jonathan de Boyne Pollard, "Fleshing out IM2000"](http://homepages.tesco.net./~J.deBoynePollard/Proposals/IM2000/)
 - [Aaron Swartz's Proposal](http://www.aaronsw.com/2002/im2000)
 - [Jorge Lehner's Notes and Software](http://www.magma.com.ni/~jorge/index_2.html)
+- [StubMail][] by Meng Weng Wong and Julian Haight.
 
 Many others have hit upon similar ideas:
 
-- [RSS/Email and IM2000][], a Google TechTalk by Meng Weng Wong and Julian Haight 7/19/2006
 - [Reinventing Email using REST][]: "You can see how REST blurs the boundaries between applications and could obliterate the boundary between 'the web' and email."
 - [email init][], a proposal by a blogger named Brent Simmons that saw a brief surge of interest. I think the proposal captures the feeling that many "power users" wish for better electronic mail, but it falls flat right out of the gate with a myopic insistence on a proprietary user interface toolkit and the reliance on an existing mail transfer protocol.
 - ...
 
 [Internet Mail 2000]: http://cr.yp.to/im2000.html
 [Project Xanadu]: http://xanadu.com
-[RSS/Email and IM2000]: http://www.youtube.com/watch?v=Kp79SZaKcLg
 [Reinventing Email using REST]: http://www.prescod.net/rest/restmail/
 [The Curse of Xanadu]: http://www.wired.com/wired/archive/3.06/xanadu_pr.html
 [email init]: http://inessential.com/2010/01/16/email_init
+[StubMail]: http://www.stubmail.com
 
 ## Pervasive goals
 
