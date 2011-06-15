@@ -4,23 +4,28 @@ There are several annoyances with the state of electronic communication today. T
 
 ## Problems
 
-Messaging suffers from problems in both protocol and user interface.
+Traditional Internet e-mail suffers from problems in both protocol and user interface.
 
 ### Protocol Problems
 
-- **Storage.** Per DJB's [Internet Mail 2000][], mail storage should be the sender's responsibility.
-- **Forged headers.** Mail should be secure and authentic by default.
-- **Abstractions.** Instant messages, message boards, Usenet, SMTP e-mail, blogs, and RSS feeds are all variations on the theme of "send a message through the Internet." I propose that all of the use cases that these disparate protocols provide could be implemented using a single protocol, with a single interface.
+- **Storage.** Traditional e-mail models a store-and-forward post office system. The burden is on the recipient to store mail. Per DJB's [Internet Mail 2000][], "mail storage should be the sender's responsibility."
+- **Forged headers.** One of the main reasons spam e-mail is so difficult to deal with is because mail headers are completely untrustable. Mail should be authentic (cryptographically signed) by default.
+- **Snooping**. Seasoned internet users know that credit card numbers cannot be sent through e-mail. New users do not and sometimes get burned. Mail should be private (encrypted) by default.
+- **Abstractions.** Instant messages, message boards, Usenet, SMTP e-mail, blogs, and RSS feeds are all variations on the theme of "send a message through the Internet to one or a number of recipients." I propose that all of the use cases that these disparate protocols provide could be implemented using a single protocol, within a single interface.
 - **Imprecise requirements.** It is notoriously difficult to build a parser and validator for an internet e-mail address. The base level of functionality should insist on strict conformance to the published spec. Spec should be designed with ease of implementation in mind.
 
 ### Interface Problems
 
-- **Conversations.** A "message" is not an atomic unit of conversation. A "message" may contain one or several points that may prompt a response. Context is fluid; responses may be made to an abstract idea formed from the collection of many disparate points, and may be presented out-of-order. Some responses may be appropriate for points from a variety of times and sources. Even those who practice [interleaved posting][] sometimes find it difficult to manage which points within a message thread have and have not been replied to. On the other end of the spectrum, a medium like instant messaging or IRC avoids the too-much state problem, but makes it difficult to maintain multiple topics of conversation simultaneously.
+- **Context in a conversation is fluid.**
+	- A "message" may contain one or several points that may elicit a response. A "message" is not an atomic unit of conversation, but most existing clients treat them as such.
+	- A message's subject or topic may vary over the course of the conversation, changing many times within one message or gradually over the course of multiple messages. Many traditional e-mail clients group messages by "subject" so it becomes important to avoid modifying the "subject" line even if the subject has changed.
+	- Responses may be made to an abstract idea formed from the collection of many disparate points across times and sources, and may be presented out-of-order. Many do not take the trouble to reference text in their reply because user interfaces do not make it easy to do so. Even those who practice [interleaved posting][] sometimes find it difficult to manage which points within a message thread have and have not been replied to, and some may be unintentionally ignored.
+	- A medium like instant messaging or IRC avoids this too-much state problem, but makes it difficult to coordinate multiple topics of conversation simultaneously.
 - **References to other messages and published text.**
 	- Hypertext links are one-way. 
 	- One can't easily reference a specific version of published text.
-	- One can't easily reference a snippet of a larger published text unless that text provides anchor markup.
-- **Managing multiple participants.** Large threads of messages quickly become unweildly. 
+	- One can't easily reference a specific location within published text unless that text provides anchor markup.
+- **Managing multiple participants.** Large threads of messages quickly become unwieldy. 
 - **Contact management.** "Buddy lists," "address books," and "keyrings" are all flavors of an abstract idea of a set of known contacts, and implementations rarely attempt to interoperate with each other or web-of-trust security systems. Attempts to merge these types of lists are often insufficient. Management of one's contacts should be an integral, second-nature feature of one's working environment, and should be uniform no matter what variety of communication one uses.
 
 [interleaved posting]: http://en.wikipedia.org/wiki/Posting_style#Interleaved_style
@@ -30,9 +35,9 @@ Messaging suffers from problems in both protocol and user interface.
 Innumerable other communication systems have appeared since 1982, when the SMTP protocol was published in [RFC 821][], yet SMTP remains the standard for Internet mail and the basis which all other successful protocols build upon. There are several aspects of the legacy SMTP which I wish to maintain:
 
 - **Internet mail is a protocol, not a piece of software.** The most important thing that I hope to produce with this project is an open and free specification that any programmer may use to create software compatible with any other implementation of the same specification.
-- **Internet mail does not require an authority.** Anyone may compile and run an e-mail server. Anyone may send mail to anyone else with nothing more than an Internet connection. ISPs frequently provide e-mail servers as a convenience, but we could get by without them if necessary. Trust systems sometimes specifiy an authority, but I hope to employ those that rely on networks of trusted peers.
-- **Internet mail encapsulates messages of any format.** An SMTP message may contain a body of any content; there are no restrictions about what it may contain. Though I hope to also develop improved formats for messaging in general, a message delivery protocol will not insist that it be used.
-- **Internet mail may be deployed locally or globally.** Organizations may run their own private mail systems which are disconnected from the Internet at large. No matter how good my implementation is, I'm not going to convince anybody while "everyone" still uses SMTP. I hope that, like XMPP, the system may be deployed within organizations who may insist that its users use it instead of SMTP, and benefit from its security features.
+- **Internet mail does not require an authority.** Anyone may compile and run an e-mail server. Anyone may send mail to anyone else with nothing more than an Internet connection. ISPs frequently provide e-mail servers as a convenience, but we could get by without them if necessary. Trust systems sometimes specify an authority, but I will employ those that make trust authorities optional at best by relying on networks of trusted peers.
+- **Internet mail encapsulates messages of any format.** An SMTP message may contain a body of any content; there are no restrictions about what it may contain. Though I intend to also develop improved data formats that can support the improvement of user interfaces for messaging, a message delivery protocol will not insist that it be used.
+- **Internet mail may be deployed locally or globally.** Organizations may run their own private mail systems which are disconnected from the Internet at large. No matter how good my implementation is, I'm not going to convince anybody while "everyone" still uses SMTP. I hope that, like XMPP, the system may be useful enough to deploy on smaller scales, perhaps with software bridges to traditional e-mail systems.
 
 [RFC 821]: http://www.faqs.org/rfcs/rfc821.html
 
@@ -67,13 +72,13 @@ Many others have hit upon similar ideas:
 ## Pervasive goals
 
 - Messages should be private (encrypted) and authentic (signed) by default.
-- Security: Signed messages from unknowns should not trigger a "make a decision now!" dialog. Instead, the system should inform the user that the message remains unauthentic, and complain loudly if a certificate changes unexpectedly. See [Trust Upon First Use][].
+- [Trust Upon First Use][]: Signed messages from unknowns should not trigger a "make a decision now!" dialog. Instead, the system should inform the user that the message remains unauthentic, provide simple instructions about how to securely authenticate a sender, and complain loudly if a certificate changes unexpectedly.
 
 [Trust Upon First Use]: http://en.wikipedia.org/wiki/User:Dotdotike/Trust_Upon_First_Use
 
 ## Development plan
 
-The first step is to break this into managable parts.
+The first step is to break this into manageable parts.
 
 - API: REST API for message storage and retrieval.
 - Impl: message storage and retrieval.
