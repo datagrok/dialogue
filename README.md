@@ -8,13 +8,11 @@ Traditional Internet e-mail suffers from problems in both protocol and user inte
 
 ### Protocol Problems
 
-- **Storage.** Traditional e-mail models a store-and-forward post office system.[^1] The burden is on the recipient to accept all mail and store it until processing. Per DJB's [Internet Mail 2000][], "mail storage should be the sender's responsibility."
+- **Storage.** Traditional e-mail models a store-and-forward post office system. The burden is on the recipient to accept all mail and store it until processing. Per DJB's [Internet Mail 2000][], "mail storage should be the sender's responsibility."
 - **Forged headers.** One of the main reasons spam e-mail is so difficult to deal with is because mail headers are completely untrustable. Mail should be authentic (cryptographically signed) by default.
 - **Snooping**. Seasoned internet users know that credit card numbers cannot be sent through e-mail. New users do not and sometimes get burned. Mail should be private (encrypted) by default.
 - **Abstractions.** Instant messages, message boards, Usenet, SMTP e-mail, blogs, and RSS feeds are all variations on the theme of "send a message through the Internet to one or a number of recipients." I propose that all of the use cases that these disparate protocols provide could be implemented using a single protocol, within a single interface.
 - **Imprecise requirements.** It is notoriously difficult to build a parser and validator for an internet e-mail address. The base level of functionality should insist on strict conformance to the published spec. Spec should be designed with ease of implementation in mind.
-
-[^1]: And unlike a meatspace postal system, the delivery vehicle for electronic mail is not a big truck that you can just dump stuff on; it is a series of tubes.
 
 ### Interface Problems
 
