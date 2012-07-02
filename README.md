@@ -1,6 +1,15 @@
 # Messaging
 
-There are several annoyances with the state of electronic communication today. The more I think about how to implement solutions, the more it seems like one must replace the whole Internet to fix them. Of course this is a fool's errand, but surely things must be able to be incrementally improved. This repository will collect all my half-baked ideas, and stabs at implementations, within this problem space.
+There are several annoyances with the state of electronic communication today. I think the problems and solutions may be conceptually divided into four areas:
+
+1. Protocol
+2. Security Infrastructure
+3. User Interface for Contacts
+4. User Interface for Conversations
+
+The issues are interrelated. Fixing the protocol requires a useful security infrastructure in place. A useful security infrastructure requires an intuitive user interface for managing contacts. Et cetera.
+
+Fixing the user interface for conversations may be an impossible morass. Luckily, since the protocol is agnostic about what data we ship through it, we might attack this last. Or there might be many viable solutions. It might be better considered an independent project. I include it here because my proposals depend on features of my proposed protocol.
 
 ## Problems
 
@@ -15,6 +24,8 @@ Traditional Internet e-mail suffers from problems in both protocol and user inte
 - **Imprecise requirements.** It is notoriously difficult to build a parser and validator for an internet e-mail address. The base level of functionality should insist on strict conformance to the published spec. Spec should be designed with ease of implementation in mind.
 
 ### Interface Problems
+
+The more I think about how to implement solutions, the more it seems like one must replace the whole Internet to fix them. Of course this is a fool's errand, but surely things must be able to be incrementally improved. 
 
 - **Context in a conversation is fluid.**
 	- A "message" may contain one or several points that may elicit a response. A "message" is not an atomic unit of conversation, but most existing clients treat them as such.
