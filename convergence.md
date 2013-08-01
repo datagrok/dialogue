@@ -12,17 +12,7 @@ Some people have found it easier to set up "mailing lists for themselves" that t
 
 [glyph-discuss]: http://twistedmatrix.com/cgi-bin/mailman/listinfo/glyph-discuss
 
-Just like with a blog, these "vainity mailing lists" support a comment system: any messages sent to the list in reply to a topic message appears in its context.
-
-Consider that sending an e-mail is similar in UI to typing text into an HTML form and clicking "send."
-
-Assume you have a mailing list that publishes its archives in HTML format on the Internet.
-
-If you can send mail to that mailing list, you have a blog.
-
-If others can respond to your messages, you have a blog that includes a threaded comments system.
-
-If others can begin new topics, you have a web forum.
+Some blogs allow visitors to comment on the content. Similarly, these "vainity mailing lists" can support a comment system: if others are allowed to send mail to the list, any messages sent in reply to a topic message appears in its context when viewed in the HTML archive.
 
 Vainity lists have something that modern blogs don't have: interoperability with all other forms of e-mail.
 
