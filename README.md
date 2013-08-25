@@ -1,8 +1,16 @@
 # Messaging
 
-_All of this is vaporware and brainstorming; watch for the removal of this notice._
-
 A protocol specification, document format specification, and set of user interface recommendations for asynchronous conversations through the Internet.
+
+I indend for Messaging to be able to not only replace, but bring about the convergence of:
+- SMTP e-mail
+- NNTP newsgroups
+- Web-based forums
+- Blogs
+- Comment sections on web-pages
+- News aggregation sites with threaded discussion boards
+
+_All of this is vaporware and brainstorming; watch for the removal of this notice._
 
 ## Problems
 
@@ -31,8 +39,8 @@ This repository (will eventually) provide(s):
 - A reference implementation of clients and servers using the protocol
 - A reference implementation of a Document editor/converter/viewer
 
-Protocol: use cases | [rationale](protocol.md) | [specification](spec/protocol-v01.md) | implementation
-Document: use cases | [rationale](document.md) | [specification](spec/document-v01.md) | implementation
+- **Protocol:** use cases | [rationale](protocol.md) | [specification](spec/protocol-v01.md) | implementation
+- **Document:** use cases | [rationale](document.md) | [specification](spec/document-v01.md) | implementation
 
 ## License
 
