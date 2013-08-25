@@ -1,4 +1,4 @@
-# Datagrok Document Specification
+# Document Specification
 
 Version 0x01
 
@@ -11,13 +11,13 @@ For information about the design decisions that resulted in this specification, 
 
 ## Introduction
 
-A Datagrok Document is a simple rich text document with a canonical representation and a mechanism for both referring to any range of its content, and including text from the interior of other documents.
+A Document is a simple rich-text document with a canonical representation and a mechanism for both referring to any range of its content, and including text from the interior of other documents.
 
 It is not a "markup" format: text attributes are stored separate from the text itself, to facilitate canonicalization.
 
 ## Definition
 
-A Datagrok Document consists of one or more Corpora together with zero or more Annotations.
+A Document consists of one or more Corpora together with zero or more Annotations.
 
 A Corpus (pl. Corpora) is a sequence of Unicode characters.
 
@@ -38,6 +38,3 @@ Text Annotation set format
 The referencing Document is responsible for providing the annotations 
 
 Number of possible substrings of a string length N? (each could have a unique hash value)
-1 1 1
-3 2 1 + (1 * 2-1+1)
-8 3 1 + (2 * 3-2+1) + (1 * 3-1+1)
