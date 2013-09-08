@@ -2,7 +2,7 @@
 
 Version 0x01
 
-This document is intended to read like an IETF RFC, leaning toward brevity like that of the [Netstrings][] spec.
+This text is intended to read like an IETF RFC, leaning toward brevity like that of the [Netstrings][] spec.
 
 For information about the design decisions that resulted in this specification, see [DESIGN][]. 
 
@@ -11,7 +11,7 @@ For information about the design decisions that resulted in this specification, 
 
 ## Introduction
 
-A Document is a simple rich-text document with a canonical representation and a mechanism for both referring to any range of its content, and including text from the interior of other documents.
+A Document is a simple rich collection of text with a canonical representation and a mechanism for both referring to any range of its content, and including text from the interior of other Documents.
 
 It is not a "markup" format: text attributes are stored separate from the text itself, to facilitate canonicalization.
 
