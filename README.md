@@ -1,8 +1,8 @@
-# Messaging
+# Dialogue
 
 A protocol specification, document format specification, and set of user interface recommendations for asynchronous conversations through the Internet.
 
-I indend for Messaging to be able to not only replace, but bring about the convergence of:
+I indend for Dialogue to be able to not only replace, but bring about the convergence of:
 - SMTP e-mail
 - NNTP newsgroups
 - Web-based forums
@@ -24,7 +24,7 @@ The issues are interrelated. Fixing the protocol requires a useful public-key se
 
 ## Solutions
 
-Messaging on the Internet can be improved by:
+Conversations on the Internet can be improved by:
 
 1. Strong encryption, signatures, and web-of-trust reputation facilities enabled by default, with user interfaces that help users to manage them, including powerful filtering.
 2. A new protocol that takes advantage of the reputation facilities to enable spam- and attack-resistance.

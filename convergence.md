@@ -36,7 +36,7 @@ I propose that this could all be different, and it begins with what Dan J. Berns
 
 **If storage is the mail sender's responsibility, all forms of Internet messaging may converge.**
 
-### E-mail is messaging.
+### E-mail is Dialogue.
 
 Alice drafts an e-mail message to send to Bob. Her e-mail program signs it, then encrypts it with a random symmetric key.
 
@@ -48,7 +48,7 @@ If this form of e-mail were as popular as SMTP, we find ourselves in this situat
 
 Alice drafts an e-mail message to send to a group of people. Her e-mail program signs it, then encrypts it with a random symmetric key. The key to decrypt the message is encrypted with each recipient's public key.
 
-# Blogs are messaging.
+# Blogs are Dialogue.
 
 Now, let's say Alice creates an e-mail, and addresses it **To: General Public**.
 

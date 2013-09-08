@@ -4,7 +4,7 @@ Types of Messages
 :Date: Sun, 30 May 2010 17:14:26 -0400
 :Authors: Michael F. Lamb <mike@datagrok.org>
 
-Senders expect e-mail to be read and responded to at the recipient's convenience. Senders expect instant messages to interrupt the recipient, and senders wait for an immediate response. (Assuming the recipient is present.) If a new messaging system intends to simultaneously replace both of these systems, it must be able to let the sender configure whether or not the message appears as "urgent" to the recipient, among other parameters. 
+Senders expect e-mail to be read and responded to at the recipient's convenience. Senders expect instant messages to interrupt the recipient, and senders wait for an immediate response. (Assuming the recipient is present.) If a new messaging system intends to simultaneously replace both of these systems, it must be able to let the sender configure whether or not the message appears as "urgent" to the recipient, among other parameters.
 
 Assuming that instant messages, message boards, Usenet, SMTP e-mail, blogs, and RSS feeds are all variations on ways to "send a message over the Internet," what are the parameters of the "message" abstraction that distinguishes these systems from one another?
 

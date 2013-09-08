@@ -1,4 +1,4 @@
-# Messaging
+# Dialogue
 
 ## Core concept
 
