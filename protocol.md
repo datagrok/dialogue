@@ -1,4 +1,4 @@
-# Dialogue
+# Dialogue Protocol
 
 ## Core concept
 
@@ -33,6 +33,10 @@ When one replies to a message, the hash value of the original message is include
 ## Signatures and Privacy
 
 All messages are signed and encrypted by default
+
+## Partial message retrieval
+
+Messages are collections of messages referenced by their hash value. A client may elect to retrieve only part of a message if it has already cached other parts, or none at all.
 
 ## Questions
 
