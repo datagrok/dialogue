@@ -17,11 +17,21 @@ It is not a "markup" format: text attributes are stored separate from the text i
 
 ## Definition
 
-A Document consists of one or more Corpora together with zero or more Annotations.
+A Corpus (pl. Corpora) is a sequence of Unicode characters. Its hash value is the SHA-256 hash of the UTF-8 encoding of its content.
 
-A Corpus (pl. Corpora) is a sequence of Unicode characters.
+A Corpus Reference is the hash value of a Corpus together with a start index (0-indexed, inclusive) and end index (0-indexed, exclusive), counting in unicode codepoints.
 
-Corpora are uniquely identified by the SHA1 hash of the UTF-8 encoding of their content.
+A Corpus Reference whose start and end index are both 0 refers to the entire content of the Corpus.
+
+An Annotaion 
+
+A Document consists of an ordered collection of one or more Corpus References together with zero or more Annotations.
+
+
+    document = ([corpus_1, ..., corpus_i], [annotation_1, ..., annotation_i])
+    H(document) = H(H(corpus_1)|...|H(corpus_i)|H()
+
+Corpora are uniquely identified by the SHA-256 hash of the
 
 Separate stylesheet and refsheet?
 
