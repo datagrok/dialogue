@@ -32,11 +32,11 @@ I propose that asymmetric encryption systems adopt the following:
 
 1. "Accept" all certificates by default, enabling encryption and signatures, but continue to present the connection as "insecure" or the data as "not verified authentic" to the user.
 
-2. Provide a "secure this connection" button or action that the user may take at any time after a certificate has been processed.
+2. Provide a "secure this connection" mechanism that the user may take at any time after a certificate has been processed.
 
-3. Guide the user with instructions for establishing a secure channel to retrieve a fingerprint code or other low-bandwidth human-friendly authentication mechanism. Remind the user not to receive such communications over unsecured e-mail or web, and to verify credentials such as government-issued IDs if possible, etc.
+3. Guide the user with instructions for establishing a secure channel. Do not provide a "Yes/No" dialog; instead require user to enter a correct fingerprint code or other low-bandwidth human-friendly authentication mechanism. Remind the user not to receive such communications over unsecured e-mail or web, and to verify credentials such as government-issued IDs if possible, etc.
 
-4. If the fingerprint is correct, the connection is presented to the user as secure *and so are all past connections.*
+4. If the fingerprint is correct, the connection is presented to the user as secure *and so are all prior connections.*
 
 5. If the certificate changes after having been accepted without a signed revocation, it should be *rather difficult* to repeat this process with a new certificate. If communications continue they should be marked as "insecure and possibly actively compromised."
 
