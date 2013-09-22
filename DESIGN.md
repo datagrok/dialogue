@@ -1,18 +1,29 @@
 # Design
 
+## Documents should be canonicalizable
+
+- For every given representation of document and annotations, there should be only one way to serialize it.
+    - A set of annotations must have a canonical order
+
 ## Hash of a document
 
 - ~~`H(D) = H(H(C_1)|H(...)|H(C_i))`~~ No, because corpora could be split an arbitrary number of ways, destroying canonicalization.
-- `H(D) = H(C_1|...|C_i)` The hash of a document includes the hash of the concatenation of all of its corpora. A Document might elect not to transmit all corpora, but the hash is still a function of it.
+- `H(D) = H(C_1|...|C_i)` The hash of a document includes the hash of the concatenation of all of its corpora. A Document might elect not to include all corpora, but the hash is still a function of it.
     - Does this imply the hash of a Document consisting of a single corpus could be equivalent to the hash of that corpus? Probably not, docs could contain more
 
-## Encrypted by default, even when audience is "public."
+## All messages MUST be encrypted, even when audience is "public."
 
 - Hinders opportunistic eavesdropping.
-- Simplifies implementation (but makes processing expensive).
+- Simplifies implementation (but makes processing more expensive).
 - Eliminates the temptation to be lazy about encryption.
 - Make encrypted content the exception rather than a nefarious act that raises suspicion.
-- "Public" avatar will be included with spec.
+- A "public" avatar that anyone may use to send "open" messages will be included with spec.
+- All weak-security messages are rejected, foiling social hacks like "really, it's me, I just lost my key."
+
+## Data is authentic by default.
+
+- Signatures on all messages make it easy to reject fraudulent messages and spam.
+- "Off-the-record" communication is still important and must be possible, but it should be an edge-case.
 
 ## Addressing a document to a set of people
 
@@ -22,3 +33,14 @@
 - Maybe: user creates "groups" for their contacts, adding a user to group sends group symmetric key to them.
     - User is asked on membership add: should new member see past communications? (Otherwise, rekey, distribute new key to all members.)
     - User is asked on membership del: should removed member lose access to future communications? (If so, rekey, distribute new key to all members.)
+
+## Recipients must check canonicalization and hashes for validity, and reject if invalid.
+
+- Foils hacking attempts
+- Forces client implementors to adhere to the spec
+
+## Meaning of Signatures
+
+- We don't want nefarious or stupid parties to assert that we have claimed authorship over something we haven't simply due to the existence of a digital signature.
+- Signatures imply approval of the content, not an assertion of _original authorship_ or copyright.
+- This doesn't mean such assertions are impossible; one may write: "I, (name), have written all the words herein." and sign _that_ statement.
