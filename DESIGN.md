@@ -44,3 +44,11 @@
 - We don't want nefarious or stupid parties to assert that we have claimed authorship over something we haven't simply due to the existence of a digital signature.
 - Signatures imply approval of the content, not an assertion of _original authorship_ or copyright.
 - This doesn't mean such assertions are impossible; one may write: "I, (name), have written all the words herein." and sign _that_ statement.
+
+## Scribbles / Notes
+
+- Message transport: well-connected host sends a *short message* to an inbox informing them of available message. Individuals may be "well-connected hosts"
+
+- Short message may not come from sender, may be copied, sent through tor, should still be authentic
+
+- What prevents an attacker from DOSing a host by sending millions of notifications out with a target url? Auth cert?

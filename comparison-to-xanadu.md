@@ -2,6 +2,12 @@
 
 Documents are similar in some ways to Ted Nelson's hypertext project [Xanadu][].
 
+Xanadu, like this project, criticizes the hypertext status quo:
+
+> The World Wide Web trivializes our original hypertext model with one-way ever-breaking links and no management of version or contents.
+
+However, Xanadu has been churning since the 1960s with little results, something Wired magazine calls the [The Curse of Xanadu][]. With modern technology like Git and Python, and a slightly different set of goals (e.g. I don't care about a "3-D" interface), hopefully this project won't suffer the same fate.
+
 ## Similarities
 
 **Xanadu's "Transclusion"**. The immutable nature of Documents provides a means to reliably cite text without necessarily duplicating that text.
@@ -24,3 +30,6 @@ Documents are similar in some ways to Ted Nelson's hypertext project [Xanadu][].
 
 [Xanadu]: http://xanadu.com/
 [Transcopyright]: http://xanadu.com/tco
+[Project Xanadu]: http://xanadu.com
+[The Curse of Xanadu]: http://www.wired.com/wired/archive/3.06/xanadu_pr.html
+

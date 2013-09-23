@@ -8,6 +8,7 @@ Asymmetric encryption systems based on a peer-to-peer public-key infrastructure 
 
 - Web browsers that encounter a self-signed SSL certificate ask the user to manually verify its authenticity before proceeding.
 - `ssh` asks that the user verify the key fingerprint of servers it hasn't seen before, before it will continue to connect.
+- `pidgin` will ask the user to verify a self-signed certificate upon every single connection, even if that certificate has not changed.
 - FIXME: `pgp`/`gpg` example
 
 However, users are frequently too busy or not knowledgeable enough to make this decision. These users will dismiss dialog boxes with a guess or with whichever answer allows them to continue working.

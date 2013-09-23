@@ -1,8 +1,11 @@
 # Dialogue
 
+_All of this is vaporware and brainstorming; watch for the removal of this notice._
+
 A protocol specification, document format specification, and set of user interface recommendations for asynchronous conversations through the Internet.
 
 I indend for Dialogue to be able to not only replace, but bring about the convergence of:
+
 - SMTP e-mail
 - NNTP newsgroups
 - Web-based forums
@@ -10,7 +13,13 @@ I indend for Dialogue to be able to not only replace, but bring about the conver
 - Comment sections on web-pages
 - News aggregation sites with threaded discussion boards
 
-_All of this is vaporware and brainstorming; watch for the removal of this notice._
+Dialogue is composed of:
+
+- **Avatar:** A specification for one's online identities. The core of every avatar is a public key.
+- **Roster:** Helps you manage Avatars.
+- **Document:** A rich-text document format that enables cross-site discussions, external quotes, content-addressable storage, encryption, and signatures.
+- **Messaging:** An IM2000-inspired message delivery system wherein _message storage is the sender's responsibility_.
+- **Opinions:** An abstraction for assertion data that enables a distributed network of trust.
 
 ## Problems
 
