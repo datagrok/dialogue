@@ -1,12 +1,12 @@
 # Cross-Site Discussions
 
-Have you ever said any of these?
+Have you ever thought:
 
 - "I'm tired of the comments I make disappearing into the void of the Internet."
 - "I was winning that argument so he deleted his post and now my words are gone."
-- "We just had the conversation in this Reddit thread in our mailing list."
+- "This Reddit thread is having the same discussion that we just had in our mailing list."
 - "I commented somewhere about this subject but I can't remember what site or blog it was on."
-- "I really want to discuss this blog post but the poster has disabled comments."
+- "I really want to discuss this blog post with other people, but the poster has disabled comments."
 
 [Dialogue][] is the answer.
 

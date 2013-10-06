@@ -2,7 +2,7 @@
 
 Do you wish that the opinions of idiots were reversed? 
 
-Often, a person's opinion of the quality of a film, book, or product, will be colored by their lifestyle, world-view, politics, religion, sports team, or education level.
+Often, a person's opinion of the quality of a film, book, or product may be colored by their lifestyle, world-view, politics, religion, favorite sports team, or education level. Any of which might not agree with your own.
 
 When looking for a good rom-com, you probably don't want to include Biff's opinion, who only enjoys action films. When looking for a challenging math textbook you probably don't want the opinion of a slacker student who never wanted to take the class in the first place.
 
