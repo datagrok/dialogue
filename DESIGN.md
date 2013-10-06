@@ -52,3 +52,5 @@
 - Short message may not come from sender, may be copied, sent through tor, should still be authentic
 
 - What prevents an attacker from DOSing a host by sending millions of notifications out with a target url? Auth cert?
+
+- [Swift](http://libswift.org/) could be very useful for Dialogue; explore this
