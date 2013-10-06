@@ -2,9 +2,9 @@
 
 _All of this is vaporware and brainstorming; watch for the removal of this notice._
 
-A protocol specification, document format specification, and set of user interface recommendations for asynchronous conversations through the Internet.
+A protocol specification, document format specification, and set of user interface recommendations for asynchronous conversation and scholarly writing on the Internet.
 
-I indend for Dialogue to be able to not only replace, but bring about the convergence of:
+I intend for Dialogue to be able to not only replace, but bring about the convergence of:
 
 - SMTP e-mail
 - NNTP newsgroups
@@ -15,7 +15,7 @@ I indend for Dialogue to be able to not only replace, but bring about the conver
 
 Dialogue is composed of:
 
-- **Avatar:** A specification for one's online identities. The core of every avatar is a public key.
+- **Avatar:** A specification for one's pseudonymous online identities. The core of every avatar is a public key.
 - **Roster:** Helps you manage Avatars.
 - **Document:** A rich-text document format that enables cross-site discussions, external quotes, content-addressable storage, encryption, and signatures.
 - **Messaging:** An IM2000-inspired message delivery system wherein _message storage is the sender's responsibility_.

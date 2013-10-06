@@ -2,7 +2,7 @@
 
 ## Foreword
 
-### Blogs and "vainity mailing lists" are equivalent.
+### Blogs and "vanity mailing lists" are equivalent.
 
 Some mailing list software can be configured to store an archive of all mail sent through it in HTML format on the Internet.
 
@@ -12,9 +12,9 @@ Some people have found it easier to set up "mailing lists for themselves" that t
 
 [glyph-discuss]: http://twistedmatrix.com/cgi-bin/mailman/listinfo/glyph-discuss
 
-Some blogs allow visitors to comment on the content. Similarly, these "vainity mailing lists" can support a comment system: if others are allowed to send mail to the list, any messages sent in reply to a topic message appears in its context when viewed in the HTML archive.
+Some blogs allow visitors to comment on the content. Similarly, these "vanity mailing lists" can support a comment system: if others are allowed to send mail to the list, any messages sent in reply to a topic message appears in its context when viewed in the HTML archive.
 
-Vainity lists have something that modern blogs don't have: interoperability with all other forms of e-mail.
+Vanity lists have something that modern blogs don't have: interoperability with all other forms of e-mail.
 
 ### A glut of incompatible options.
 

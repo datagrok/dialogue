@@ -20,7 +20,7 @@ However, Xanadu has been churning since the 1960s with little results, something
 
 **Dialogue is and always will be DRM-free.** Xanadu contains several interesting and good ideas, but it includes as well one stupendously horrible idea: "[Transcopyright][]," which proposes a micropayment pay-per-view model and restrictions on the use of published text. DRM is evil and ruinous.
 
-**Dialogue is a format specification only.** The Xanadu project dictates a document format, data structures, and user interface minutae, and collects it all into an implementation called "XanaSpace." It should be possible to have a wide variety of software that may author Documents and a similar variety of user interface designs for doing so.
+**Dialogue is a format specification only.** The Xanadu project dictates a document format, data structures, and user interface minutiae, and collects it all into an implementation called "XanaSpace." It should be possible to have a wide variety of software that may author Documents and a similar variety of user interface designs for doing so.
 
 **Dialogue documents are content-addressable.** Dialogue documents are named by their hash value. Xanadu documents are named with "tumblers," which is an attempt to enable a hierarchical unique numerical naming system for every document in the network.
 

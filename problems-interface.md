@@ -18,7 +18,6 @@ Fixing the user interface for conversations may be an impossible morass. Luckily
 
 ## Other work
 
-Project Xanadu includes a user interface specification. See [comparison to xanadu][].
+Project Xanadu includes a user interface specification. See [comparison to Xanadu][].
 
-[comparison to xanadu]: xanadu.md
-
+[comparison to Xanadu]: xanadu.md

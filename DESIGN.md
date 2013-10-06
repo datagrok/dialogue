@@ -28,7 +28,7 @@
 ## Addressing a document to a set of people
 
 - Techniques exist to do this already; explore them
-- Maybe: encrypt w/a symmetric key, encrypt symmetric key with assymetric key to end users.
+- Maybe: encrypt w/a symmetric key, encrypt symmetric key with asymmetric key to end users.
     - Non-group communication should work the same way, treat as 1-person group
 - Maybe: user creates "groups" for their contacts, adding a user to group sends group symmetric key to them.
     - User is asked on membership add: should new member see past communications? (Otherwise, rekey, distribute new key to all members.)

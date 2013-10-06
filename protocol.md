@@ -24,7 +24,7 @@ The sender's server might elect never to automatically clean up a message, inste
 
 ## Content-addressable mail storage
 
-If the server makes messages accessable by their hash value, it becomes trivial to distribute that data, and to serve it.
+If the server makes messages accessible by their hash value, it becomes trivial to distribute that data, and to serve it.
 
 ## Replies reference the original message
 
