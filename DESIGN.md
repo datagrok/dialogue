@@ -45,6 +45,18 @@
 - Signatures imply approval of the content, not an assertion of _original authorship_ or copyright.
 - This doesn't mean such assertions are impossible; one may write: "I, (name), have written all the words herein." and sign _that_ statement.
 
+## Data is distributed by default. "No expectation of rights management"
+
+News journalism sites want to provide stories to paying customers (only) or create a sub-set that is free to all.
+
+Photographers and graphic artists want to show their photos to people for free, but want to control or extract payment when their work is reused.
+
+- The document store employed in Dialgoue is assumed to be distributed and redundant.
+- Any data stored in it should be assumed to be widely distributed and publicly accessible, even if the original author's store goes offline. (However, the data may be encrypted.)
+- Sites formerly paywalled must instead employ broadcast (or large recipient group) encryption. Redistribution of unencrypted content is a purely social and legal problem. 
+- Limited access is possible: encrypt content (or part of content) to public keys of those who pay
+- "Temporary access" and access revocation is impossible: if a recipient has read a Document once, it can be assumed they can read it forever.
+
 ## Scribbles / Notes
 
 - Message transport: well-connected host sends a *short message* to an inbox informing them of available message. Individuals may be "well-connected hosts"
