@@ -1,0 +1,17 @@
+digraph G {
+    edge [fontsize=9];
+    profile_gui -> avatar [label="connected with"]
+    profile_gui -> opinions [label="manage your"]
+    roster_gui -> avatar [label="manage other"]
+    messaging -> avatar [label="crypto and sigs using"]
+    messaging -> web_of_trust [label="filters unknown senders using"]
+    messaging -> document [label="formats messages as"]
+    avatar -> opinions [label="stores profile info as"]
+    opinions -> tuple_index [label="search opinions using"]
+    opinions -> cas [label="stores avatars, targets in"]
+    messaging -> cas [label="stores data in"]
+    tuple_index -> cas [style=dashed label="maybe stores data in"]
+    document -> cas [label="subparts storable in"]
+    web_of_trust -> avatar [label="principals"]
+    web_of_trust -> opinions [label="stores trust levels as"]
+}
