@@ -51,6 +51,10 @@ This repository (will eventually) provide(s):
 - **Protocol:** use cases | [rationale](protocol.md) | [specification](spec/protocol-v01.md) | implementation
 - **Document:** use cases | [rationale](document.md) | [specification](spec/document-v01.md) | implementation
 
+## Versions
+
+I've been noodling on this idea for a very long time. The earliest versioned writing I can find about it is dated Oct 22, 2003.
+
 ## License
 
 - All documentation herein is [GNU Free Documentation License][] v1.3 unless otherwise noted.
