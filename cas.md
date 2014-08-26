@@ -1,10 +1,10 @@
 # Content-Addressable Storage (CAS)
 
-[Opinions][] and [Document][] both make heavy use of references to document content by hash value.
+[Opinions][] and [Document][] both make heavy use of references to document content by hash value. [Messaging][] may rely entirely on the behavior of a distributed CAS to publish its content.
 
 We should provide a simple interface to a variety of means of data storage and retrieval.
 
-The most basic requests might be:
+The most basic requests might be to store data locally for future retrieval:
 
     get(hash) -> data
     put(data) -> hash
@@ -20,7 +20,7 @@ A `get` request might look first (or simultaneously) in local cache, then in all
     - Allowing others to dictate which resources will be queried is an attack vector. There should be a carefully constructed policy about types of URLs, allowed domains and schemas, queries per unit time, etc.
 - The user might not want to query the network, if doing so inappropriately reveals information about themselves to others.
     - This should be an option set per-call, default to not querying
-- The user might want to query only a trusted subset of the network, like their friends in a darknet. They might want to allow their request to propagate throughout the darknet using transitive trust, or to be limited to their friends only.
+- The user might want to query only a trusted subset of the network, like their Avatar's friends in a darknet. They might want to allow their request to propagate throughout the darknet using transitive trust, or to be limited to their Avatar's immediate friends only.
 - The user might want to query only networks which are accessed through an anonymizing proxy like [Tor][].
     - This is probably equivalent to "not querying if doing so reveals information about themselves to others" when the user has no network CAS providers configured who declare anonymous=True.
 - The user might not want to retrieve data above a certain size if they are using a metered or slow connection.

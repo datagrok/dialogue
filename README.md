@@ -2,28 +2,26 @@
 
 _All of this is vaporware and brainstorming; watch for the removal of this notice._
 
-A protocol specification, document format specification, and set of user interface recommendations for asynchronous conversation and scholarly writing on the Internet.
+*Dialogue* is a system for asynchronous conversation on the Internet, intended to to not only replace, but bring about the convergence of:
 
-I intend for Dialogue to be able to not only replace, but bring about the convergence of:
-
-- SMTP e-mail
+- SMTP E-Mail
 - NNTP newsgroups
 - Web-based forums
 - Blogs
 - Comment sections on web-pages
-- News aggregation sites with threaded discussion boards
+- News aggregation sites with threaded discussion boards like Slashdot, Reddit, Digg, Facebook, etc.
 
 Dialogue is composed of:
 
-- **Avatar:** A specification for one's pseudonymous online identities. The core of every avatar is a public key.
+- **Messaging:** A decentralized, asynchronous, threaded conversation system with notification.
+- **Opinions:** An abstraction for assertion data that enables a distributed network of trust, reputation, and quality for pseudonymous authors and their statements.
+- **Avatar:** A specification for one's pseudonymous online identities. The core of every Avatar is a public key.
 - **Roster:** Helps you manage Avatars.
 - **Document:** A rich-text document format that enables cross-site discussions, external quotes, content-addressable storage, encryption, and signatures.
-- **Messaging:** An IM2000-inspired message delivery system wherein _message storage is the sender's responsibility_.
-- **Opinions:** An abstraction for assertion data that enables a distributed network of trust.
 
-## Problems
+## Motivation
 
-There are several annoyances with the state of electronic communication today. I think the problems and solutions may be conceptually divided into different areas:
+There are several severe problems with the state of electronic communication today. I think the problems and solutions may be conceptually divided into different areas:
 
 1. [Protocol & data format](problems-protocol.md)
 2. [Security & Identity](problems-security.md)

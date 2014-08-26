@@ -1,38 +1,38 @@
-# The convergence of Internet messaging
+# The convergence of asynchronous Internet messaging
 
-## Foreword
+Thesis: all forms of asynchronous messaging on the Internet are essentially the same, and so could converge into a single protocol and interoperate with one another.
 
-### Blogs and "vanity mailing lists" are equivalent.
+## Blogs and "vanity mailing lists" are equivalent.
 
-Some mailing list software can be configured to store an archive of all mail sent through it in HTML format on the Internet.
+Some mailing list software can be configured to store an archive of all mail sent through it as HTML pages on the Internet.
 
-Some people have found it easier to set up "mailing lists for themselves" that than to adopt blog software or services, for the purpose of publishing the kind of content one would normally publish in a blog.
+Before WordPress, Facebook, Twitter, and LiveJournal were popular, some people preferred to create "vanity mailing lists" rather than employing blog software or services, for the purpose of publishing the kind of content one would normally publish in a blog.
 
 > This is a mailing list set up for me to randomly send messages to, and for my "fans" to discuss me. It's like an interactive weblog that's text-only, no HTML. --[glyph-discuss]
 
 [glyph-discuss]: http://twistedmatrix.com/cgi-bin/mailman/listinfo/glyph-discuss
 
-Some blogs allow visitors to comment on the content. Similarly, these "vanity mailing lists" can support a comment system: if others are allowed to send mail to the list, any messages sent in reply to a topic message appears in its context when viewed in the HTML archive.
+Some blogs allow visitors to comment on the content. Similarly, "vanity mailing lists" can support a kind of comment system: if others are allowed to send mail to the list, any messages sent in reply to a topic message appears in its context when viewed in the HTML archive.
 
 Vanity lists have something that modern blogs don't have: interoperability with all other forms of e-mail.
 
-### A glut of incompatible options.
+## A glut of incompatible options.
 
-There are today a disparate glut of incompatible messaging systems in widespread use on the Internet. SMTP e-mail, USENET, forums like those on Slashdot and Reddit. Comments on Wordpress blogs. Disqus comments on various webpages. Facebook and Linkedin have their own systems. Every website has its own private-silo messaging and commenting infrastructure.
+There are today a disparate glut of incompatible messaging systems in widespread use on the Internet. SMTP e-mail, USENET, forums like those on Slashdot and Reddit. Comments on Wordpress blogs. Disqus comments on various webpages. Facebook and LinkedIn have their own systems. Every website has its own private-silo messaging and commenting infrastructure.
 
 Without "pingback" software specifically designed to do it, there is no way to reply to a comment on one blog from another blog, or to merge a conversation taking place on Reddit with one on Digg about the same topic or URL.
 
 If you do add a comment or a reply to someone else's commenting or forum system, it is entirely possible that it will be hidden or deleted. It's under someone else's control.
 
-Some web-based forum software allows one to edit their posts. This means that the statement you reply to might not remain the same. You can be made to appear to agree or disagree with something you do not with bait-and-switch.
+Some web-based forum software allows one to edit their posts. This means that the statement you reply to might be edited after you've replied to it. You can be made to appear to agree or disagree with something you do not with this bait-and-switch.
 
-Many webpages that one might wish to have a discussion about explicitly disable comments.
+Many webpages that one might wish to have a discussion about do not offer a comment system, or explicitly disable their comment system.
 
 A great deal of discussion happens on "mailing lists" that would benefit various discussions on the same subjects happening in web-based forums, and vice versa.
 
 ## How it could be different
 
-I propose that this could all be different, and it begins with what Dan J. Bernstein's IM2000 project proposes: e-mail storage is the sender's responsibility.
+I propose that this could all be different, and it begins with what D. J. Bernstein's IM2000 project proposes: e-mail storage is the sender's responsibility.
 
 **If storage is the mail sender's responsibility, all forms of Internet messaging may converge.**
 
