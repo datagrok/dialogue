@@ -52,11 +52,11 @@ We have seen how blogs with comments, vainity mailing lists, and IM2000-style e-
 
 # The benefits of convergence
 
-Vanity lists have something that modern blogs don't have: interoperability with all other forms of e-mail.
+Vanity lists have something that modern blogs don't have: interoperability with all other forms of e-mail. Imagine if more messaging systems could interoperate!
 
 ## A glut of incompatible options.
 
-There are today a disparate glut of incompatible messaging systems in widespread use on the Internet. SMTP e-mail, USENET, forums like those on Slashdot, Kuro5hin, Digg, Reddit, and MetaFilter. Comments on WordPress and other blogs. Disqus comments on various webpages. Facebook and LinkedIn have their own systems. Every website seems to have its own private-silo messaging and commenting infrastructure.
+There are today a glut of incompatible messaging systems in widespread use on the Internet. SMTP e-mail, USENET, forums like those on Slashdot, Kuro5hin, Digg, Reddit, and MetaFilter. Comments on WordPress and other blogs. Disqus comments on various webpages. Facebook and LinkedIn have their own systems. Every website seems to have its own private-silo messaging and commenting infrastructure.
 
 Without "pingback" software specifically designed to do it, there is no way to reply to a comment on one blog from another blog, or to merge a conversation taking place on Reddit with one on Digg about the same topic or URL.
 
