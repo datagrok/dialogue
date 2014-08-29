@@ -15,7 +15,7 @@ Dialogue is composed of:
 
 - **Messaging:** A decentralized, asynchronous, threaded conversation system with push notification.
 - **Opinions:** An abstraction for assertion data that enables a distributed network of trust, reputation, and quality for pseudonymous authors and their statements.
-- **Storage**: A [content-addressable storage](/datagrok/dialogue/blob/master/cas.md) system, possibly including a decentralized, or distributed/peer-to-peer component.
+- **Storage**: A [content-addressable storage](cas.md) system, possibly including a decentralized, or distributed/peer-to-peer component.
 - **Avatar:** A specification for one's pseudonymous identities. The core of every Avatar is a cryptographic public key.
 - **Roster:** User Interface recommendations for software that helps you manage Avatars.
 - **Document:** A rich-text document format that enables cross-site discussions, external quotes, content-addressable storage, encryption, and signatures.
@@ -24,7 +24,7 @@ Dialogue is composed of:
 
 I'm not happy with the state of conversations on the Internet.
 
-- There are a glut of incompatible silos even though they're all [essentially the same thing](/datagrok/dialogue/blob/master/convergence.md).
+- There are a glut of incompatible silos even though they're all [essentially the same thing](convergence.md).
 - When they're not apathetic of the criminally abusive (Twitter), they destroy their users' privacy (Google Plus).
 - They take ownership of their participants' words, and sometimes destroy them.
 - Their user interfaces are insufficient to enable most people to engage in complex discussions.
@@ -34,7 +34,7 @@ I'm not happy with the state of conversations on the Internet.
 
 All of these issues can be fixed, by embracing reputation, filtering, and above all else giving the user tools to control what they see.
 
-I align with the values stated in the [Indie Tech Manifesto][]. <small>(However, this project is not supported by the ind.ie Foundation.)</small>
+I align with the values stated in the [Indie Tech Manifesto][]. (However, this project is not supported by the ind.ie Foundation.)
 
 [Indie Tech Manifesto]: https://ind.ie/manifesto/
 
