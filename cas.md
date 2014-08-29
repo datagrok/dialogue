@@ -1,19 +1,29 @@
 # Content-Addressable Storage (CAS)
 
-[Opinions][] and [Document][] both make heavy use of references to document content by hash value. [Messaging][] may rely entirely on the behavior of a distributed CAS to publish its content.
+_draft / unfinished_
 
-We should provide a simple interface to a variety of means of data storage and retrieval.
+[Opinions][] and [Document][] both make heavy use of references to document content by hash value. [Messaging][] might rely entirely on the behavior of a distributed CAS to publish its content.
+
+We should identify the minimum interface we require for data storage and retrieval, then examine what existing software might be employed to implement it.
 
 The most basic requests might be to store data locally for future retrieval:
 
-    get(hash) -> data
     put(data) -> hash
+    get(hash) -> data
 
 Both of these functions may have additonal implications which require more arguments, return values, or environment settings. Let's explore them.
 
+## Data storage
+
+A `put` request might offer data first to local cache, then store in configured local storage areas according to some policy, and then offer the data to configured network-based storage systems.
+
+- Data to be stored might be critical to store for a long time, to backup, etc., while other data might be expirable. How do we manage this? (Management is perhaps out of scope, to be dealt with by each subsystem, provided an expiry or storage intent.)
+- The user might want to mark some data "private." Such data should never be made accessible to others. This may mean never storing it in the network (without sufficient encryption), and never serving it to (unauthenticated) users on the network.
+- TODO: Messaging may wish to ensure data is served to the network upon request, or deleted from a local node after first retrieval
+
 ## Data retrieval
 
-A `get` request might look first (or simultaneously) in local cache, then in all configured local storage areas, then it might query all configured network-based storage systems. Considerations:
+A `get` request might look first in a local cache, then in all configured local storage areas, then it might query all configured network-based storage systems. Considerations:
 
 - The client might have a set of URLs that may be employed to retrieve the data if it is not found locally.
     - The likelihood that data will be available from given URLs is higher than that of it being available on some general-purpose network CAS, so maybe prefer these methods of retrieval?
@@ -35,15 +45,6 @@ Interfaces to network CAS systems should expose queriable properties representin
     - this could be boolean "trusted" vs. "public"
 - secrecy: "identifiable" vs. "anonymous"
 
-## Data storage
-
-A `put` request might offer data first to local cache, then store in configured local storage areas according to some policy, and then offer the data to all configured network-based storage systems.
-
-- Data to be stored might be critical to store for a long time, to backup, etc., while other data might be expirable. How do we manage this? (This is perhaps out of scope, to be dealt with by each subsystem.)
-- The user might want to mark some data private, and not distribute it to the network. Furthermore, the user might wish to label this data "private" in some way, to prevent it from ever reaching the network in the future.
-    - Rather than attempt a janky labelling or metadata scheme, maybe just provide a local storage with the queryable property "private."
-- The user might want to # TBD FIXME
-
 ## Result
 
 So far it seems that we need to provide an API like:
@@ -51,6 +52,18 @@ So far it seems that we need to provide an API like:
     get(hash, local_only=True, trusted_only=False, anonymous=False)
     put(data, private=False, expires=None)
 
+## Storage systems we might employ
+
+- Any number of distributed hash tables; see [Wikipedia: Distributed hash table][]
+- Any number of distributed key-value stores; see ["Anti-RDBMS: A list of distributed key-value stores"][Jones 09]
+- Postgresql as a key-value store.
+- A home-grown filesystem-based mechanism like git uses.
+- [IPFS][], "The Permanent Web," "a global, versioned, peer-to-peer filesystem."
+
 [TOR]: https://www.torproject.org/
 [Opinions]: /datagrok/opinions
 [Document]: /datagrok/dialogue/blob/master/spec/document-v01.md
+[Messaging]: /datagrok/dialogue/blob/master/messaging.md
+[IPFS]: http://ipfs.io
+[Jones 09]: http://www.metabrew.com/article/anti-rdbms-a-list-of-distributed-key-value-stores
+[Wikipedia: Distributed hash table]: http://en.wikipedia.org/wiki/Distributed_hash_table
