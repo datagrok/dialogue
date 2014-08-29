@@ -1,53 +1,42 @@
 # Dialogue
 
-_All of this is vaporware and brainstorming; watch for the removal of this notice._
+_draft/unfinished/vaporware_
 
 *Dialogue* is a system for asynchronous conversation on the Internet, intended to to not only replace, but bring about the convergence of:
 
 - SMTP E-Mail
 - NNTP newsgroups
-- Web-based forums
-- Blogs
-- Comment sections on web-pages
-- News aggregation sites with threaded discussion boards like Slashdot, Reddit, Digg, Facebook, etc.
+- Web-based forums like phpBB, Discourse, YaBB/YaBBSE/SMF
+- Blogs and micro-blogs like Twitter, Facebook, etc.
+- Comment and discussion areas on websites, like those provided by Disqus, IntenseDebate, Juvia, etc.
+- News aggregation sites with threaded discussion boards like Slashdot, Reddit, Digg, etc.
 
 Dialogue is composed of:
 
-- **Messaging:** A decentralized, asynchronous, threaded conversation system with notification.
+- **Messaging:** A decentralized, asynchronous, threaded conversation system with push notification.
 - **Opinions:** An abstraction for assertion data that enables a distributed network of trust, reputation, and quality for pseudonymous authors and their statements.
-- **Avatar:** A specification for one's pseudonymous online identities. The core of every Avatar is a public key.
-- **Roster:** Helps you manage Avatars.
+- **Storage**: A [content-addressable storage](/datagrok/dialogue/blob/master/cas.md) system, possibly including a decentralized, or distributed/peer-to-peer component.
+- **Avatar:** A specification for one's pseudonymous identities. The core of every Avatar is a cryptographic public key.
+- **Roster:** User Interface recommendations for software that helps you manage Avatars.
 - **Document:** A rich-text document format that enables cross-site discussions, external quotes, content-addressable storage, encryption, and signatures.
 
 ## Motivation
 
-There are several severe problems with the state of electronic communication today. I think the problems and solutions may be conceptually divided into different areas:
+I'm not happy with the state of conversations on the Internet.
 
-1. [Protocol & data format](problems-protocol.md)
-2. [Security & Identity](problems-security.md)
-3. [User Interface](problems-interface.md)
+- There are a glut of incompatible silos even though they're all [essentially the same thing](/datagrok/dialogue/blob/master/convergence.md).
+- When they're not apathetic of the criminally abusive (Twitter), they destroy their users' privacy (Google Plus).
+- They take ownership of their participants' words, and sometimes destroy them.
+- Their user interfaces are insufficient to enable most people to engage in complex discussions.
+- When they're not choked with spam, they demand tedious registration procedures (web-based forums and blog comments).
+- If cryptographic authenticity and privacy is available at all, it is a poorly-bolted-on afterthought (SMTP E-Mail).
+- If reputation exists at all, it serves only the majority group of participants, and the quality erodes as it gains in popularity (Slashdot, Reddit, Digg).
 
-The issues are interrelated. Fixing the protocol requires a useful public-key security infrastructure in place. A useful security infrastructure requires an intuitive user interface for managing contacts. A document format with a canonical representation may be hashed and referenced without a central authority. Et cetera.
+All of these issues can be fixed, by embracing reputation, filtering, and above all else giving the user tools to control what they see.
 
-## Solutions
+I align with the values stated in the [Indie Tech Manifesto][]. <small>(However, this project is not supported by the ind.ie Foundation.)</small>
 
-Conversations on the Internet can be improved by:
-
-1. Strong encryption, signatures, and web-of-trust reputation facilities enabled by default, with user interfaces that help users to manage them, including powerful filtering.
-2. A new protocol that takes advantage of the reputation facilities to enable spam- and attack-resistance.
-3. A new hypertext standard wherein documents have exactly one canonical representation, and provide for other documents a uniform way to reference sub-ranges of their content.
-
-## Details
-
-This repository (will eventually) provide(s):
-
-- A [protocol specification](spec/protocol-v01.md) and the [rationale](protocol.md) behind the design decisions made therein;
-- A [hypertext document format specification](spec/document-v01.md) and the [rationale](document.md) behind the design decisions made therein;
-- A reference implementation of clients and servers using the protocol
-- A reference implementation of a Document editor/converter/viewer
-
-- **Protocol:** use cases | [rationale](protocol.md) | [specification](spec/protocol-v01.md) | implementation
-- **Document:** use cases | [rationale](document.md) | [specification](spec/document-v01.md) | implementation
+[Indie Tech Manifesto]: https://ind.ie/manifesto/
 
 ## Versions
 
