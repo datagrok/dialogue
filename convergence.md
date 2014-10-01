@@ -31,7 +31,7 @@ D. J. Bernstein's [Internet Mail 2000][IM2000] project proposes: _"e-mail storag
 Consider IM2000-style e-mail, abstractly, as we did earlier with blogs and mailing lists. If mail storage is the sender's responsibility, then e-mail becomes:
 
 1. **Topic message:** Someone creates a message and gives it a subject line and a specific set of recipients.
-2. **Online storage:**The  message is stored in an always-online location where recipients may retrieve it at their convenience.
+2. **Online storage:** The message is stored in an always-online location where recipients may retrieve it at their convenience.
 3. **Notification:** According to some policy, recipients are notified that a new message is available for them.
 4. **Comments:** Others may reply to that message, and their replies are collected under and displayed with that same topic.
 5. **Discussion:** Others may further reply to the replies in the same manner.

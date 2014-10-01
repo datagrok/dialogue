@@ -2,7 +2,7 @@
 
 _draft/unfinished/vaporware_
 
-*Dialogue* is a system for asynchronous conversation on the Internet, intended to to not only replace, but bring about the convergence of:
+*Dialogue* is a system for asynchronous conversation on the Internet, intended to replace all of these with a single, decentralized, user-centric open protocol:
 
 - SMTP E-Mail
 - NNTP newsgroups
@@ -13,12 +13,14 @@ _draft/unfinished/vaporware_
 
 Dialogue is composed of:
 
-- **Messaging:** A decentralized, asynchronous, threaded conversation system with push notification.
+- **Messaging:** A decentralized, asynchronous messaging system with push notification.
 - **Opinions:** An abstraction for assertion data that enables a distributed network of trust, reputation, and quality for pseudonymous authors and their statements.
 - **Storage**: A [content-addressable storage](cas.md) system, possibly including a decentralized, or distributed/peer-to-peer component.
 - **Avatar:** A specification for one's pseudonymous identities. The core of every Avatar is a cryptographic public key.
-- **Roster:** User Interface recommendations for software that helps you manage Avatars.
-- **Document:** A rich-text document format that enables cross-site discussions, external quotes, content-addressable storage, encryption, and signatures.
+- **Roster:** User interface recommendations for software that manages Avatars.
+- **Document:** A rich-text document format that enables cross-site threaded discussions, external quotes,encryption, and signatures.
+
+Each of these pieces may be interesting or useful alone, but to achieve the goal of better conversation on the internet, all are required.
 
 ## Motivation
 

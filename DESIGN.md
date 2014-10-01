@@ -65,4 +65,8 @@ Photographers and graphic artists want to show their photos to people for free, 
 
 - What prevents an attacker from DOSing a host by sending millions of notifications out with a target url? Auth cert?
 
+- How does Dialogue align with Aral Balkan's Indie Tech? https://aralbalkan.com/notes/towards-an-indie-tech-manifesto/ https://aralbalkan.com/notes/2014-the-rise-of-indie-tech/ https://aralbalkan.com/notes/on-evolving-indieauth/
+
+- How does Dialogue align with Indie Web? http://indiewebcamp.com/
+
 - [Swift](http://libswift.org/) could be very useful for Dialogue; explore this
