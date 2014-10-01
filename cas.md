@@ -2,4 +2,4 @@
 
 _This project has moved into its own repository; see [Storage][]._
 
-[Storage]: /datagrok/storage
+[Storage]: https://github.com/datagrok/storage
